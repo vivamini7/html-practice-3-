@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋쟁이사자처럼 '^'</title>
+
+    <meta property="og:tilte" content="멋쟁이사자처럼 화이팅">
+    <meta property="og:description" content="멋쟁이사자처럼 화이팅">
+    <meta property="og:image" content="./연대멋사.png">
+</head>
+<body>
+    <img src=연대멋사.png width="170" height="150">
+    <div>
+        <h1>연세대학교 멋쟁이사자처럼 12기 지원서</h1>
+        <p>내 아이디어를 내 손으로 구현해보고 싶다면 주목!
+        </br><span style="font-style: italic">연세대학교 멋쟁이사자처럼</span>에서 12기 아기사자를 모집합니다.
+        </br>코딩교육을 통해 자신의 아이디어를 서비스로 구현하고 나아가 창업을 꿈꾸는 분들의 많은 지원 부탁드립니다.</p>
+    </div>  
+    <hr>
+    <div>
+        <h2>1. 모집일정</h2>
+        <ul>
+            <li>서류 제출: 2/16(금) 09:00~2/23(금)</li>
+            <li>서류 합격자 발표: 2/26(월) 오후 합격자 개별 공지</li>
+            <li>온라인 면접: 2/28(수) ~2/29(목)</li>
+            <li>최종 합격자 발표: 3/2(토) 오후 합격자 개별 공지</li>
+        </ul>
+    </div>
+    <div>
+        <h2>2. 문의사항</h2>
+        <ul>
+            <li>오픈채팅: <a href="#">바로가기</a></li>
+            <li>인스타그램: <a href="https://www.instagram.com/likelion_yonsei/">likelion.yonsei</a></li>
+        </ul>
+    </div>
+    <div>
+        <b><u>서류 제출 기간을 꼭 확인하신 후 기간 내 제출 부탁드립니다.</u></b>
+    </div>
+    <hr>
+    <form action ="#" accept-charset="utf-8" name="person_info" method="get">
+        <fieldset style="background-color:azure">
+            <legend style="font-weight: bold">지원자정보</legend>
+            이름 <input type = "text" name="name" required/></br>
+            <p></p>
+            학번 <input type = "number" name="studentnumber" required/></br>
+            <p></p>
+            생년월일 <input type ="date" min ="1990-01-01" max="2005-12-31" name="date" required></br>
+            <p></p>
+            학년 및 학기 <select name = "학년 및 학기" >
+                <option value = "1-1">1-1</option>
+                <option value = "1-2">1-2</option>
+                <option value = "2-1">2-1</option>
+                <option value = "2-2">2-2</option>
+                <option value = "3-1">3-1</option>
+                <option value = "3-2">3-2</option>
+                <option value = "4-1">4-1</option>
+                <option value = "4-2">4-2</option>
+            </select></br>
+            <p></p>
+            이메일 <input type="email" name="email" 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="유효한 이메일 주소를 입력하세요." /></br>
+            <p></p>
+            휴대폰 번호 <input type = "text" name="phonenumber" required/></br>
+        </fieldset>
+        <fieldset style="background-color: beige;">
+            <legend style="font-weight: bold">트랙 선택/ 정기 조공 안내</legend>
+            <p></p>
+            <div style="font-weight: bold">지원 하고자하는 트랙을 선택해 주시기 바랍니다. (중복 선택 불가)</div></br>
+            <input type="radio" name = "front-back" />프론트엔드
+            <input type="radio" name = "front-back" />백엔드</br>
+            <p></p>
+            <div style="font-weight: bold">멋쟁이사자처럼 학회원은 매달 최소 10만원씩 운영진에게 바쳐라.<br>얼마를 낼 것인가?</div></br>
+            조공 금액: <input type="number" min="10" max="50" step="1" name="money" placeholder="10" required>만원 (최대 50만원)
+        </fieldset>
+        <fieldset style="background-color:bisque">
+            <legend style="font-weight: bold">문항</legend>
+            <style>
+                textarea {
+                    width: 100%; /* textarea를 부모 요소의 100% 너비로 설정 */
+                    resize: none; /* 사용자가 크기 조절할 수 없도록 설정 */
+                    background-color: rgb(255, 249, 240);
+                }
+            </style>
+            <ol>
+                <li>
+                    지원동기<br><textarea name="comment" rows="4" placeholder="지원동기입력해라잉"></textarea><br>
+                </li>
+                <br>
+                <li>
+                    협업경험<br><textarea name="comment" rows="4" placeholder="협업경험입력해라잉"></textarea><br>
+                </li>
+                <br>
+                <li>    
+                    만들고 싶은 서비스<br><textarea name="comment" rows="4" placeholder="만싶서입력해라잉"></textarea><br>
+                </li>
+                <br>
+                <li>
+                    코딩 공부에 얼마나 시간을 투자할 생각이신가요?<br><textarea name="comment" rows="1" placeholder="공부많이해라잉"></textarea><br>
+                </li>
+                <br>
+                <li>
+                    포토폴리오가 있다면 첨부해주세요.(선택사항) <p><input type="file" value="AttachedFile"></p>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset style="background-color: antiquewhite;">
+            <legend style="font-weight: bold">비대면 면접 참석 가능 시간</legend>
+            <br>
+            <div style="font-weight: bold">가능한 시간을 <span style="font-style: italic">모두 체크</span>해주세요!</div>
+            <ol>
+                <li> <span style="font-weight: bold">2/28</span> <br>
+                    <input type="checkbox" name="time">10
+                    <input type="checkbox" name="time">11
+                    <input type="checkbox" name="time">12
+                    <input type="checkbox" name="time">13
+                    <input type="checkbox" name="time">14
+                </li>
+                <li> <span style="font-weight: bold">2/29</span> <br>
+                    <input type="checkbox" name="time">10
+                    <input type="checkbox" name="time">11
+                    <input type="checkbox" name="time">12
+                    <input type="checkbox" name="time">13
+                    <input type="checkbox" name="time">14
+                </li>
+            </ol>
+        </fieldset>
+        <input type="submit" value="제출하기">
+        <input type="reset" value="취소하기">
+    </form>
+</body>
+</html>
